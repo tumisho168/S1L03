@@ -1,0 +1,28 @@
+﻿
+@*  Here is this property and assign it this value
+    Grab anything you want to grab
+    Put any property in the viewbag as much as we want
+    Such as Viewbag.Whatever = "Foo";
+*@
+
+
+@{
+    ViewBag.Title = "Home Page";
+    //ViewBag.Whatever = "Foo"; >> Not being used now. The view collection called "Foo" 
+    //is not being used or called.
+
+}
+ 
+
+<ul class="resources">
+    
+    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+</ul>
+
+@* IF you have......This will be rendered after "RenderSection in _Layout.cshtml *@
+@* @section Scripts{
+    <script type="text/javascript">
+        $.....
+    </script>
+    }
+*@

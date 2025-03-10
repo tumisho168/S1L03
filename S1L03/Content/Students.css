@@ -1,0 +1,110 @@
+﻿body{
+background-color:lightblue;
+}
+
+/* Header styling */
+header h1 {
+    margin: 0;
+    padding: 10px 0;
+    color: #333;
+}
+
+/* Navigation menu styling */
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: black;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li:not(:last-child) {
+    border-right: 1px solid white;
+}
+
+/* Active link styling */
+.navbar a.active {
+    background-color: #555;
+}
+
+/* Content sections styling */
+div {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+/* Image styling */
+img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+    img:hover {
+        transform: scaleY(-1);
+    }
+
+/* First section image (left aligned) */
+div:nth-of-type(1) img {
+    float: left;
+    margin-right: 15px;
+}
+
+/* Second section image (right aligned) */
+div:nth-of-type(2 ) img {
+    float: right;
+    margin-left: 15px;
+}
+
+/* Module container styling */
+.container {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Table styling for modules */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
